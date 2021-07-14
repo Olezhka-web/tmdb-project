@@ -1,0 +1,10 @@
+.page, .current-page{
+    margin-right: 15px;
+    padding: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.current-page{
+    border-color: red;
+}
