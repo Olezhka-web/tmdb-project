@@ -14,13 +14,15 @@ export default function MoviesList({ movie, count, genres }){
                 }
             }>
                 {count % 2 === 0 ? <div><img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="movie-icon" style={{width: '100%', height: '150px'}}/></div> : <div><img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="movie-icon" style={{width: '100%', height: '245px'}}/></div>}
+                <div className="list__item-container">
                 <div className="list__item-title">{movie.title}</div>
                 <div className="list__item-genres">
                     <div><img src={locationIcon} alt="location-icon" className="location-icon"/></div>
                     <div><GenreBadge movie={movie} genres={genres}/></div>
                 </div>
-                <div>{movie.overview.length > 30 ? movie.overview.substring(0, movie.overview.indexOf('.'))+"..." : movie.overview}</div>
-            </Link>
+                <div className="list__item-description">{movie.overview.length > 30 ? movie.overview.substring(0, movie.overview.indexOf('.'))+"..." : movie.overview}</div>
+                </div>
+                </Link>
             <hr/>
             <div className="item-container">
                 <div className="stars-container">

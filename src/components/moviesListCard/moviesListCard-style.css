@@ -1,8 +1,7 @@
 .section__movie-list{
     max-width: 1024px;
-    max-height: 2500px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    column-count: 4;
+    column-gap: 0;
+    position: relative;
 }

@@ -4,10 +4,10 @@ a{
 }
 
 .movie__list-item{
-    max-width: calc(25%);
     border: 1px solid #e9e9e9;
     border-radius: 5px;
     margin-bottom: 20px;
+    break-inside: avoid;
 }
 
 .list__item-title{
@@ -16,6 +16,8 @@ a{
 
 .list__item-genres{
     display: flex;
+    font-size: 14px;
+    color: #acaaaa;
 }
 
 .location-icon{
@@ -32,10 +34,23 @@ a{
 }
 
 .item-container{
+    margin-top: 15px;
     display: flex;
     align-items: center;
+    padding-left: 20px;
 }
 
 .stars-container{
-    margin-right: 90px;
+    /*margin-right: 90px;*/
+    width: 78%;
+}
+
+.list__item-container{
+    padding-left: 20px;
+}
+
+.list__item-description{
+    font-size: 13px;
+    color: #acaaaa;
+    margin-bottom: 25px;
 }
