@@ -1,7 +1,13 @@
 .section__movie-list{
+    background: #f0efee;
+    margin-bottom: 15px;
+}
+
+.wrapper-section{
     max-width: 1024px;
     margin: 0 auto;
     column-count: 4;
     column-gap: 0;
     position: relative;
+    padding-top: 50px;
 }

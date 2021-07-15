@@ -1,5 +1,8 @@
-.page, .current-page{
+.page__link{
     margin-right: 15px;
+}
+
+.page, .current-page{
     padding: 5px;
     border: 1px solid black;
     cursor: pointer;

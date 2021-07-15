@@ -27,6 +27,7 @@ export default function Header(){
                     </div>
                 </div>
             </header>
+            <hr/>
         </div>
     )
 }
