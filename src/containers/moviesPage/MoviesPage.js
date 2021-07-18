@@ -26,7 +26,8 @@ export default function MoviesPage({ movies, page, currentPage, clickPage, switc
                 <div className="page__link-dark">
                     <Link to={
                         {
-                            pathname: `/movies/page/${page}`
+                            pathname: `/movies/page/${page}`,
+                            search: history.location.search
                         }
                     }>
         <span className={currentPage === page ? "current-page" : "page"} onClick={() => clickPage(page)}>
