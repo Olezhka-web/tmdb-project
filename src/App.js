@@ -98,9 +98,11 @@ function App() {
   const checkSwitcher = (e) =>{
     if(e.target.checked){
       dispatch(getSwitchThemeTrue());
+      localStorage.setItem('data-theme', 'Dark');
     }
     else{
       dispatch(getSwitchThemeFalse());
+      localStorage.setItem('data-theme', 'Light');
     }
   };
 

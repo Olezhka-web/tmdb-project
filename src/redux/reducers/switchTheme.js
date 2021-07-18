@@ -1,7 +1,7 @@
 import {SWITCH_THEME_FALSE, SWITCH_THEME_TRUE} from "../actionTypes";
 
 const initialState = {
-    switchTheme: 'Light'
+    switchTheme: localStorage.getItem('data-theme') === null ? 'Light' : localStorage.getItem('data-theme')
 };
 
 export const switchThemeReducer = (state = initialState, action) =>{
