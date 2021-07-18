@@ -1,13 +1,31 @@
-.page__link{
+.page__link-light .page{
     margin-right: 15px;
-}
-
-.page, .current-page{
+    color: black;
     padding: 5px;
     border: 1px solid black;
     cursor: pointer;
 }
 
-.current-page{
-    border-color: red;
+.page__link-dark .page{
+    margin-right: 15px;
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.page__link-light .current-page{
+    margin-right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    color: black;
+    border: 1px solid red;
+}
+
+.page__link-dark .current-page{
+    margin-right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid red;
 }

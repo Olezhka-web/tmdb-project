@@ -1,0 +1,24 @@
+.section__movie-light{
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section__movie-dark{
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stars-container{
+    width: 100%;
+    margin-right: 20px;
+}
+
+hr{
+    width: 100%;
+}

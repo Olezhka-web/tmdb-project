@@ -1,6 +1,9 @@
-.section__movie-list{
+.section__movie-list--light{
     background: #f0efee;
-    margin-bottom: 15px;
+}
+
+.section__movie-list--dark{
+    background: black;
 }
 
 .wrapper-section{
