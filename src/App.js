@@ -120,7 +120,7 @@ function App() {
             <Route exact path='/' render={() => (<HomePage movies={movies} genres={genres} pages={pages} currentPage={currentPage} clickPage={clickPage} loadingPage={todosLoading} checkSwitcher={checkSwitcher} switchTheme={switchTheme} setGenres={setGenres} genreSelected={genreSelected}/>)}/>
             <Route exact path='/movies/page/:id' render={() => (<HomePage movies={movies} genres={genres} pages={pages} currentPage={currentPage} clickPage={clickPage} loadingPage={todosLoading} checkSwitcher={checkSwitcher} switchTheme={switchTheme} setGenres={setGenres} genreSelected={genreSelected}/>)}/>
             <Route exact path={'/movies/:id'} render={(props) => (<PosterPreview checkSwitcher={checkSwitcher} switchTheme={switchTheme} {...props}/>)}/>
-            <Route exact location={{ pathname: '?sortedBy=id' }} render={() => (<HomePage movies={movies} genres={genres} pages={pages} currentPage={currentPage} clickPage={clickPage} loadingPage={todosLoading} checkSwitcher={checkSwitcher} switchTheme={switchTheme} setGenres={setGenres} genreSelected={genreSelected}/>)}/>
+            <Route exact location={{search: '?sortedBy=id' }} render={() => (<HomePage movies={movies} genres={genres} pages={pages} currentPage={currentPage} clickPage={clickPage} loadingPage={todosLoading} checkSwitcher={checkSwitcher} switchTheme={switchTheme} setGenres={setGenres} genreSelected={genreSelected}/>)}/>
           </Switch>
         </div>
       </Router>

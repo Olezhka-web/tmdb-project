@@ -12,7 +12,7 @@ export default function MoviesListCard( {movies:{results}, genres, switchTheme, 
             history.push(`/`);
         }
         else {
-            history.push(`/movies?sortedBy=${name}`);
+            history.push(`${history.location.pathname}?sortedBy=${name}`);
         }
         setGenres({id, name});
     }
