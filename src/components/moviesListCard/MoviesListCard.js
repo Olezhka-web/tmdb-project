@@ -1,6 +1,7 @@
 import MoviesList from "../moviesList/MoviesList";
 import './moviesListCard-style.css';
 import {useHistory} from "react-router-dom";
+import {useEffect} from "react";
 
 export default function MoviesListCard( {movies:{results}, genres, switchTheme, setGenres, genreSelected }){
 
@@ -16,6 +17,20 @@ export default function MoviesListCard( {movies:{results}, genres, switchTheme, 
         }
         setGenres({id, name});
     }
+
+    const handleSetObjectGenre = (objectGenre) =>{
+        if(objectGenre){
+            const {id, name} = objectGenre;
+            setGenres({id, name});
+        }
+    }
+
+    useEffect(()=>{
+        if(JSON.stringify(genres.genres.find(item => item.name === history.location.search.substr(history.location.search.indexOf('=') + 1, history.location.search.length))) !== JSON.stringify(genreSelected)){
+            handleSetObjectGenre(genres.genres.find(item => item.name === history.location.search.substr(history.location.search.indexOf('=') + 1, history.location.search.length)));
+        }
+    }, []);
+
 
     return (
         switchTheme === 'Light' ?
